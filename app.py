@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 @app.route("/")
-def home()
+def home():
     return "Quotenest API is running!"
 
 with open('quotes.json', 'r') as f:
