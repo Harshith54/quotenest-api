@@ -3,6 +3,9 @@ import random
 import json
 
 app = Flask(__name__)
+@app.route("/")
+def home()
+    return "Quotenest API is running!"
 
 with open('quotes.json', 'r') as f:
     quotes = json.load(f)
